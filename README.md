@@ -14,3 +14,7 @@ docker logs app_container --follow
 
 ### Note
 The quality of the results is better in the notebook because the notebook and the docker image code diverge a little. This is due to refactoring in going from the notebook to python repo and to last-minute improvements applied to the notebook that I didn't port to the Python app.
+
+
+### Next steps
+I have to stop here for lack of time. But the next step I would introduce is to reprocess answers with low confidence. Ideally, I could reinitialize the llm with a lower temperature and see if I get a better confidence score. Failing that I could also introduce a difference model and ensamble the results with the best confidence. 
